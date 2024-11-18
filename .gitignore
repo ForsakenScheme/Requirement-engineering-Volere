@@ -1,0 +1,47 @@
+# LaTeX specific files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Backup files (e.g., from text editors)
+*~
+*.bak
+*.swp
+*.swo
+*.tmp
+
+# LaTeX auxiliary files for biblatex
+*.bcf
+
+# PDF output and temporary files
+*.pdf
+*.dvi
+*.ps
+
+# MacOS Finder files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+
+# Other editor-specific files
+.vscode/
+.idea/
+*.iml
+
+# LaTeXmk files (for LaTeX compilation)
+latexmkrc
+
+# Editor-specific temporary files
+*.log
+
+# Ignore main.run.xml file
+main.run.xml

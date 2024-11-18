@@ -1,0 +1,87 @@
+\documentclass[12pt, twoside]{article} 
+
+\usepackage[a4paper]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\usepackage{sectsty}
+\usepackage{hyperref}
+
+% Bibliography
+\usepackage[backend=biber]{biblatex}
+\usepackage{csquotes}
+\addbibresource{references.bib}
+
+% Section font sizes
+\sectionfont{\fontsize{22}{26}\selectfont}
+\subsectionfont{\fontsize{20}{24}\selectfont}
+\subsubsectionfont{\fontsize{18}{22}\selectfont}
+
+% Increase paragraph spacing
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0pt}
+
+% Set margins
+\setlength{\hoffset}{-1.1in}
+\setlength{\voffset}{-1in}
+\setlength{\oddsidemargin}{2cm}
+\setlength{\evensidemargin}{2cm}
+\setlength{\topmargin}{0.7cm}
+\setlength{\headheight}{1.2cm}
+\setlength{\headsep}{0.4cm}
+\setlength{\textheight}{25.7cm}
+\setlength{\textwidth}{17.5cm}
+\setlength{\footskip}{1.0cm}
+\setlength{\columnsep}{0.5cm}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue,
+}
+
+% Array rule width and row spacing
+\setlength{\arrayrulewidth}{0.5mm}
+\renewcommand{\arraystretch}{1.5}
+
+% Fancyhdr setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{USER GUIDE}
+\fancyhead[RE,LO]{ABAI}
+\fancyfoot[LE,LO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+\setlength{\headheight}{15pt}
+\setlength{\footskip}{30pt}
+\setlength{\headsep}{30pt}
+
+\begin{document}
+    % title page
+    \include{sections/title-page}
+
+    % table of contents
+    \tableofcontents
+
+    %% content
+    % section 1 : purpose
+    \include{sections/1_purpose}
+
+    % section 2 : stakeholders
+    \include{sections/2_stakeholders}
+
+    % section 3 : constraints
+    \include{sections/3_constraints}
+
+    \printbibliography{}
+\end{document}
