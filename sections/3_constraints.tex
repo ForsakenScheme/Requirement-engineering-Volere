@@ -20,7 +20,7 @@
 % Box1
 \begin{tcolorbox}[minimalcard]
     \raggedright\textbf{Description}: \vspace{6pt}\\
-    The product shall use a Microsoft Kinect to monitor the user's movements during reproduction of exercises. The use of a kinect is an abitrary decision based on the fact that it has proven to be quite successful at using joint monitoring to analyse gesture with precision. We will provide the kinect to the therapist and he will distribute them further to interested patients.\\
+    The product shall use a Microsoft Kinect to monitor the user's movements during reproduction of exercises. The use of a kinect is an abitrary decision based on the fact that it has proven to be quite successful at using joint monitoring to analyse gesture with precision. The kinect will be provided for the therapist and he will distribute them further to interested patients.\\
     \vspace{6pt}
     \textbf{Rationale}: \vspace{6pt}\\
     A monitoring device capable of analysing movements with a minimum of precision is required for Motion Recovery. Patients and therapists shouldn't directly have to pay a supplement for the cost of such a device.\\
@@ -78,6 +78,9 @@
 \end{tcolorbox}
 \vfill
 \subsection{Implementation Environment of the Current System}
+Motion Recovery operates in a distributed environment with Kinect devices for motion tracking, a PC application for exercise logging and live-feedback (active interactions), and a mobile app for viewing progress and receiving notifications (passive interactions). Data is synchronized across all devices via a cloud database, ensuring up-to-date information for both patients and therapists. This environment is designed to be scalable and accessible, using the Kinect for accurate motion tracking at home and the cloud for centralized data storage and management.\par
+The web application will have to provide relevant information to the therapist, such as the patient's progress, adherence to the therapy plan and the ability to adjust the therapy plan by updating the database with new exercices or update existing ones. For seamless integration with existing physical therapy tools, Motion Recovery will support data export and import in common formats such as CSV and PDFs.   
+\vfill
 
 \subsection{Partner or Collaborative Applications}
 \subsection{Off-the-Shelf Software}
