@@ -1,0 +1,87 @@
+\addtocontents{toc}{\protect\newpage}
+\section{Constraints}
+\subsection{Solution Constraints}
+% Definition of a minimalistic box style with rounded corners for the solution constraints
+\tcbset{
+    minimalcard/.style={
+        colback=white,       
+        colframe=black,     
+        boxrule=0.4mm,      
+        arc=4mm,             
+        width=\textwidth,   
+        outer arc=1mm,       
+        boxsep=4pt,          
+        left=6pt,            
+        right=6pt,           
+        top=6pt,             
+        bottom=6pt           
+    }
+}
+% Box1
+\begin{tcolorbox}[minimalcard]
+    \raggedright\textbf{Description}: \vspace{6pt}\\
+    The product shall use a Microsoft Kinect to monitor the user's movements during reproduction of exercises. The use of a kinect is an abitrary decision based on the fact that it has proven to be quite successful at using joint monitoring to analyse gesture with precision. We will provide the kinect to the therapist and he will distribute them further to interested patients.\\
+    \vspace{6pt}
+    \textbf{Rationale}: \vspace{6pt}\\
+    A monitoring device capable of analysing movements with a minimum of precision is required for Motion Recovery. Patients and therapists shouldn't directly have to pay a supplement for the cost of such a device.\\
+    \vspace{6pt}
+    \textbf{Fit Criterion}: \vspace{6pt}\\
+    Users have access to the kinect system after integration of Motion Recovery into their physical therapy plan. The acquirement, transportation and installation of the kinect should be simple and successful without advanced technical knowledge.  
+\end{tcolorbox}
+% Box2
+\begin{tcolorbox}[minimalcard]
+    \raggedright\textbf{Description}: \vspace{6pt}\\
+    Motion Recovery will handle sensitive information in regards to user activities during their recovery. Personal information will also be provided to Motion Recovery. Medical data has to be handled with care and securely. Furthermore, data overall will be handled with respect of GDPR guidelines.\\
+    \vspace{6pt}
+    \textbf{Rationale}:\\ \vspace{6pt}
+    Ensuring the security and privacy of user data is essential to maintain trust between patients, therapists, and the system. Non-compliance with GDPR and other regulations could result in legal and financial consequences, as well as harm the reputation of the system. Proper handling of sensitive information minimizes the risk of unauthorized access, data breaches, or misuse.\\
+    \vspace{6pt}
+    \textbf{Fit Criterion}:\\ \vspace{6pt}
+    All sensitive data is encrypted both in transit and at rest using industry-standard protocols. The system includes user consent mechanisms and a privacy policy in compliance with GDPR. Access to personal and medical data is restricted based on user roles, and audit logs track all access and modifications to such data.
+\end{tcolorbox}
+\vfill
+\hfill
+% Box3
+\begin{tcolorbox}[minimalcard]
+    \raggedright\textbf{Description}: \vspace{6pt}\\
+    The Motion Recovery system must include a reporting feature for therapists to track and analyze patient progress. The reports should provide visual and textual feedback on performance metrics such as range of motion, frequency of exercises, and adherence to the prescribed therapy plan.\\
+    \vspace{6pt}
+    \textbf{Rationale}: \vspace{6pt}\\
+    Tracking progress is crucial for therapists to assess recovery, adjust therapy plans, and provide constructive feedback to patients. Clear and accessible reporting ensures therapists can effectively manage multiple patients.\\
+    \vspace{6pt}
+    \textbf{Fit Criterion}: \vspace{6pt}\\
+    The system generates reports that include graphical representations of performance metrics. Therapists can access and download patient reports within a maximum of three clicks. Reports must cover at least a week of activity and allow customization of the metrics displayed.
+\end{tcolorbox}
+
+% Box4
+\begin{tcolorbox}[minimalcard]
+    \raggedright\textbf{Description}: \vspace{6pt}\\
+    Motion Recovery will include a personalized exercise library. This library should be customizable by therapists to adapt to individual patient needs and include video instructions, difficulty levels, and alternative exercise options.\\
+    \vspace{6pt}
+    \textbf{Rationale}: \vspace{6pt}\\
+    A flexible, user-specific approach to exercises ensures patients stay motivated and their therapy remains relevant to their progress and limitations.\\
+    \vspace{6pt}
+    \textbf{Fit Criterion}: \vspace{6pt}\\
+    The library supports at least 50 pre-configured exercises with the ability for therapists to add or modify up to 100 custom exercises. Video instructions are accessible in the system for every listed exercise, and therapists can assign and adjust exercises with minimal navigation complexity.
+\end{tcolorbox}
+
+% Box5
+\begin{tcolorbox}[minimalcard]
+    \raggedright\textbf{Description}: \vspace{6pt}\\
+    The system must provide real-time feedback on exercise performance, including errors in movement, posture, or timing. Feedback should be displayed in an intuitive, non-intrusive manner, such as visual corrections on a screen or verbal guidance.\\
+    \vspace{6pt}
+    \textbf{Rationale}: \vspace{6pt}\\
+    Real-time feedback helps patients perform exercises correctly, reducing the risk of injury and improving the effectiveness of therapy. Immediate correction is critical for learning proper movements.\\
+    \vspace{6pt}
+    \textbf{Fit Criterion}: \vspace{6pt}\\
+    Feedback latency should not exceed 500 milliseconds. The system provides at least three levels of feedback detail (basic, intermediate, and advanced) and supports both visual and auditory modes of correction.
+\end{tcolorbox}
+\vfill
+\subsection{Implementation Environment of the Current System}
+
+\subsection{Partner or Collaborative Applications}
+\subsection{Off-the-Shelf Software}
+\subsection{Anticipated Workplace Environment}
+\subsection{Schedule Constraints}
+\subsection{Budget Constraints}
+\subsection{Enterprise Constraints}
